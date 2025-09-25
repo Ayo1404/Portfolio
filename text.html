@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ayomide Akinbobola | Mechanical Engineer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+    header h1 {
+    color: white;
+    }
+    header, footer {
+      background-color: #1f2937;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    nav {
+      background-color: #111827;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: #60a5fa;
+      text-decoration: none;
+      margin: 1rem;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    section {
+      margin-bottom: 3rem;
+    }
+    h1, h2, h3 {
+      color: #1f2937;
+    }
+    .project {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+      background-color: white;
+    }
+    .project img {
+      width: 100%;
+      max-height: 250px;
+      object-fit: cover;
+      border-radius: 6px;
+      margin-bottom: 0.75rem;
+    }
+    ul {
+      padding-left: 1.5rem;
+    }
+    footer a {
+      color: #60a5fa;
+    }
+    .project-content {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.project-content img {
+  width: 300px;
+  height: auto;
+  border-radius: 6px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.project-content .text {
+  flex: 1;
+  min-width: 200px;
+}
+    .toggle-btn {
+  background: none;
+  border: none;
+  color: #2563eb;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  padding: 0;
+}
+
+.toggle-btn:hover {
+  text-decoration: underline;
+}
+
+.extra-details {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out, opacity 0.3s ease-out;
+  opacity: 0;
+}
+
+.extra-details.open {
+  max-height: 1000px; /* Large enough to fit content */
+  opacity: 1;
+}
+
+.extra-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.extra-images img {
+  width: 250px;
+  height: auto;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+  </style>
+</head>
+<body>
+  <header>
+    <h1> Ayomide Akinbobola </h1>
+    <p>Mechanical Engineering Student at the University of Sheffield</p>
+    <p>Email: <a href="mailto: ayomideakinbobola@gmail.com" style="color:#60a5fa">evan.albury@outlook.com</a></p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#cv">CV</a>
+  </nav>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I am a third-year Mechanical Engineering student at the University of Sheffield, passionate about motorsport, mechanical design, and applied engineering. I'm actively seeking a 2026/27 industrial placement to apply my knowledge and experience picked up throughout my degree and soft skills grown within my work.</p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects & Experience</h2>
+
+        <article class="project">
+  <div class="project-content">
+    <img src="Wind_tunnel.jpg" alt="Wind tunnel photo" />
+    <div class="text">
+      <h3>Wind tunnel</h3>
+      <p>Designed a small-scale wind tunnel for the purpose of validating CFD carried out on conceptual car parts</p>
+
+      <button class="toggle-btn">More Details ▼</button>
+
+      <div class="extra-details">
+        <p>
+          Section in progress...
+        </p>
+        <div class="extra-images">
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+      
+<article class="project">
+  <div class="project-content">
+    <img src="MEC45_img.JPG" alt="Bike Gearbox Project Image" />
+    <div class="text">
+      <h3>Bike Gearbox Design - Second Year University</h3>
+      <p>Developed a gearbox for an EAPC for transmitting power from an electric motor to the rear wheel. Achieved a 2:1 in the Project.</p>
+
+      <button class="toggle-btn">More Details ▼</button>
+
+      <div class="extra-details">
+        <p> The project began with calculating the required gear ratio to match motor output while complying with UK regulations. We explored multiple concepts — including belt drives, multi-stage gearboxes, and planetary designs — before selecting a compact two-stage gearbox as the most effective solution. </p> 
+        <p> Once the concept was agreed, I focused on detailed design: selecting gear module and thickness, producing CAD models, and running FEA simulations to validate performance. We then manufactured a prototype using laser-cut acrylic and tested it two weeks before the final assessment. During testing, a gear sheared from the shaft at high speed, which taught us the importance of robust load transfer methods. In response, we redesigned the assembly with clamped, bolted joints instead of relying solely on adhesive. </p>
+        <p> Our final design performed strongly. We scored in the top 10% for material efficiency and fitting time, and achieved a competitive distance result. Although a small oversight (exposed rotating nuts) limited our mark in one category, the project developed my skills in CAD, simulation, design iteration, prototyping, and testing under real-world constraints. </p>
+        <div class="extra-images">
+          <img src="Gearbox_img.JPG" alt="Geabox attatched to rig">
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+
+      <article class="project">
+  <div class="project-content">
+    <img src="Kart_img.jpg" alt="BSRC Trackside Support Image" />
+          <div class="text">
+        <h3>BSRC Race Mechanic Support</h3>
+        <p>Helped voluntarily as a mechanic at British Superkart Races. Finished in second place most recently in 2024.</p>
+
+      <button class="toggle-btn">More Details ▼</button>
+
+      <div class="extra-details">
+        <p>
+          Section in progress...
+        </p>
+        <div class="extra-images">
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+      
+<article class="project">
+  <div class="project-content">
+    <img src="Astley_Hire_img.JPG" alt="Astley Hire Internship Image" />
+    <div class="text">
+      <h3>Summer Internship – Astley Hire</h3>
+        <p>Carried out maintenance and repairs at an industrial plant hire company across 2 summers as well as Christmas and Easter holidays.</p>
+
+      <button class="toggle-btn">More Details ▼</button>
+
+      <div class="extra-details">
+        <p>My main role as an assistant maintenance engineer was to carry out PDIs (Pre-Delivery Inspections) on machines such as Scissor lifts and industrial washers. This involved tasks such as visual and functional testing and also some quick fixes such as re-wiring plugs.</p>
+        <p>Another part of my role was carrying out repairs on the machines. These would vary hugely from fixing bodywork to stripping machines and motors and fixing electronic wiring.</p>
+        <p>I have also undergone many training courses while at Astley Hire. These were IPAF(3A & 3B) - to drive around scissor lifts and cherry pickers, PASMA for scaffold use, Power tools, Spill Kit, Harness inspection, Abrasive wheels and Manual handling.</p>
+        <div class="extra-images">
+          <img src="Electronics_img.jpg" alt="Electronic Components">
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+
+      <article class="project">
+  <div class="project-content">
+    <img src="EYH1.jpg" alt="Space habitat photo" />
+    <div class="text">
+      <h3>Engineering You're Hired</h3>
+      <p>Worked in a team of multidisciplinary engineers to design a conceptual architecture for living in outer space.</p>
+
+      <button class="toggle-btn">More Details ▼</button>
+
+      <div class="extra-details">
+        <p>For the Engineering You're Hired project, I was put into a team of multi-disciplinary engineers for a week and we were tasked with designing a life support system for long-term habitation in space. Our design should be scalable and adaptable, it should detail how it could be integrated into future missions and should explore the application of earth-based technologies.</p>
+        <p>We first worked together to come up with the issues that our design must address. This included energy generation, waste management, food and water production and oxygen generation. We then split up and each took a section to do some research on. There were also some extra considerations that we carried out as a team such as costing and transport to and from the station as this would require details from all of our designs.</p>
+        <p>Our progress was reviewed across 3 presentations and a technical report where we showed our findings to experts in the field. Our final design involved an almost closed loop system with the only external energy coming from nuclear power stores. All other resources would come from re-use and recycling what was already generated. In the end we designed what I believe to be a very realistic design for space living that, if necessary could be ready for production once the small details were ironed out.</p>
+        <div class="extra-images">
+          <img src="EYH2.jpg" alt="Decision Matrix">
+          <img src="EYH3.jpg" alt="Layout Sketch">
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+      
+      <article class="project">
+  <div class="project-content">
+    <img src="Launcher_img.jpg" alt="Water Bottle Rocket Launcher Project Image" />
+    <div class="text">
+      <h3>Water Bottle Rocket Launcher - First Year University</h3>
+            <p>Designed and built a launcher for compressed air-powered water bottle rockets. Integrated safety mechanisms, pressure regulation, and conducted launch tests to evaluate trajectory stability and thrust efficiency.</p>
+
+      <button class="toggle-btn">More Details ▼</button>
+
+      <div class="extra-details">
+        <p> The project began with manufacturing the mechanical launch system using a range of workshop tools, including 3D printing, CNC machining, pillar drills, and guillotines. The initial launcher worked but lacked stability and could only fire rockets straight upwards. To solve this, we designed a stand with rails to guide the launch angle and ground pegs for stability, alongside modifications to the rocket itself. </p> 
+        <p> We refined the launcher design with a plywood frame, a nose cone on the rocket to reduce drag, and fins to shift the centre of pressure rearwards for improved stability. To control flight distance, we combined MATLAB modelling with physical testing, using real-world data to improve our simulation accuracy. </p>
+        <p> On test day, our model predicted the required pressure and water volume for a 70 m launch. All three attempts landed within 10 m of the target, earning a first-class result. The project developed my skills in CAD, prototyping, MATLAB programming, data analysis, and experimental validation. </p>
+        <div class="extra-images">
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+
+  <article class="project">
+  <div class="project-content">
+    <img src="GEC1.jpg" alt="Transport Infrastructure photo" />
+    <div class="text">
+      <h3>Global engineering challenge</h3>
+      <p>Worked in a multidisciplinary engineering team to design transport infrastructure for a remote village in Cambodia. Received the Dr. Trish Murray Professional Behaviours Team Award.</p>
+
+      <button class="toggle-btn">More Details ▼</button>
+
+      <div class="extra-details">
+        <p>For the Global Engineering Challenge project, I was put into a team of multi-disciplinary engineers and tasked with enhancing transport infrastructure in the remote village of Pu Ngaol in Cambodia. Our design had to be safe and reliable in both the wet and the dry but also allow for maintenance to be simple and cost effective.</p>
+        <p>We started by surveying the site through the information we were given as well as analysing the maps we were given. This allowed us to generate an idea of where the roads were in critical condition, how they were used and where exctly needed to be improved. We then looked at what the main problems were and how they could be fixed. The main issue we were facing was how durable the roads were in flooding conditions.</p>
+        <p>Once we had worked out the issues, we began coming up with ideas and researching them. Once we had come up with all possible ideas we had a meeting where we put them all into a decision matrix and anaylsed the results. Our final design was a choice to combine 2 of our concepts. We would first raise the road with laterite around 40cm and put pipe culverts under to allow for water flow. We would then add a compacted gravel road surface on top for a natural look and a suitable road surface. Finally we carried out calculations on our design to prove its suitability. We were assessed through both a technical report and a presentation, where we won the Dr Trish Murray Professional Behaviours Team Award.</p>
+        <div class="extra-images">
+          <img src="GEC2.jpg" alt="Rich picture diagram">
+          <img src="GEC3.jpg" alt="Decision matrix">
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+
+  <article class="project">
+  <div class="project-content">
+    <img src="Reaching_aid1.jpg" alt="Reaching aid photo" />
+    <div class="text">
+      <h3>Reaching aid</h3>
+      <p>Designed a reaching aid for people with limited arm mobility. Achieved a 2:1 for the project.</p>
+
+      <button class="toggle-btn">More Details ▼</button>
+
+      <div class="extra-details">
+        <p>
+          Section in progress...
+        </p>
+        <div class="extra-images">
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+      
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li><strong>Design Software:</strong> CAD – Fusion 360, Autocad & Tinkercad</li>
+        <li><strong>Simulation Software:</strong> FEA – Fusion 360 ; CFD – Ansys workbench</li>
+        <li><strong>Manufacturing Skills:</strong> 3D Printing – FDM ; Lathe ; Hand & power tools ; Laser cutting ; Soldering</li>
+        <li><strong>Diagnostics:</strong> Mechanical fault detection ; Component testing </li>
+        <li><strong>Programming Languages:</strong> MATLAB ; Python ; C++ ; C ; HTML</li>
+        <li><strong>Training Courses:</strong> IPAF (3A & 3B); PASMA, Power Tools; Spill Kit; Harness Inspection; Abrasive Wheels; Manual Handling</li>
+        <li><strong>Project Management:</strong> Gantt Charts ; Trello</li>
+        <li><strong>Microsoft Office:</strong> Excel ; Word ; PowerPoint</li>
+      </ul>
+    </section>
+
+    <section id="cv">
+      <h2>CV</h2>
+      <p><a href="Evan Albury-CV.pdf" download>Download my CV</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Connect with me on <a href="https://www.linkedin.com/in/evan-albury-9013k7/">LinkedIn</a></p>
+    <p>&copy; 2025 Evan Albury</p>
+  </footer>
+  <script>
+  document.querySelectorAll('.toggle-btn').forEach(button => {
+    button.addEventListener('click', () => {
+      const details = button.nextElementSibling;
+      details.classList.toggle('open');
+
+      // Change button text/arrow
+      if (details.classList.contains('open')) {
+        button.textContent = 'Less Details ▲';
+      } else {
+        button.textContent = 'More Details ▼';
+      }
+    });
+  });
+</script>
+</body>
+</html>
