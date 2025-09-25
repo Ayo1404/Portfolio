@@ -3,168 +3,172 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ayomide Akinbobola | Portfolio</title>
+  <title>Ayomide Akinbobola | Mechanical Engineer</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
+      font-family: Arial, sans-serif;
       background: #f8f9fa;
-      color: #333;
+      color: #222;
+      line-height: 1.6;
     }
     header {
-      background: #1f2937;
+      background: linear-gradient(to bottom, #111827, #1f2937);
       color: white;
-      padding: 3rem 1rem;
       text-align: center;
+      padding: 5rem 2rem;
     }
     header h1 {
-      margin: 0;
-      font-size: 2.5rem;
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
     }
     header p {
-      font-size: 1.2rem;
-      margin-top: 0.5rem;
-    }
-    nav {
-      background: #111827;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      padding: 0.5rem 0;
-    }
-    nav a {
-      color: #60a5fa;
-      text-decoration: none;
-      margin: 0.5rem 1rem;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    main {
-      max-width: 1000px;
-      margin: auto;
-      padding: 2rem;
+      font-size: 1.25rem;
     }
     section {
-      margin-bottom: 4rem;
-    }
-    h2 {
-      color: #1f2937;
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 0.5rem;
+      max-width: 900px;
+      margin: auto;
+      padding: 3rem 1rem;
     }
     .project {
       background: white;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
       padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
       margin-bottom: 2rem;
     }
     .project h3 {
       margin-top: 0;
+      color: #1f2937;
     }
-    .skills-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 1rem;
+    .toggle-btn {
+      background: none;
+      border: none;
+      color: #2563eb;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 0.5rem;
+      padding: 0;
     }
-    .skill {
-      background: white;
-      border: 1px solid #ddd;
-      border-radius: 6px;
-      padding: 1rem;
-      text-align: center;
+    .toggle-btn:hover {
+      text-decoration: underline;
+    }
+    .extra-details {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease-out, opacity 0.3s ease-out;
+      opacity: 0;
+    }
+    .extra-details.open {
+      max-height: 1000px;
+      opacity: 1;
+      margin-top: 1rem;
     }
     footer {
-      background: #1f2937;
+      background: #111827;
       color: white;
       text-align: center;
-      padding: 1.5rem;
+      padding: 2rem 1rem;
+    }
+    footer a {
+      color: #60a5fa;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Ayomide Akinbobola</h1>
-    <p>Mechanical Engineering Student | Motorsport Enthusiast | Innovator</p>
-  </header>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#skills">Skills</a>
-    <a href="#contact">Contact</a>
-  </nav>
+<header data-aos="fade-up">
+  <h1>Ayomide Akinbobola</h1>
+  <p>Mechanical Engineering Student | Motorsport & Performance Engineering Enthusiast</p>
+</header>
 
-  <main>
-    <section id="about">
-      <h2>About Me</h2>
+<section id="about" data-aos="fade-up">
+  <h2>About Me</h2>
+  <p>
+    I am a third-year Mechanical Engineering student at the University of Sheffield, passionate about motorsport, vehicle performance, and applied engineering. 
+    I’m seeking a 2026/27 placement where I can apply my technical and analytical skills, contribute to performance challenges, and grow in a fast-paced environment.
+  </p>
+</section>
+
+<section id="projects">
+  <h2 data-aos="fade-up">Projects</h2>
+
+  <article class="project" data-aos="fade-up">
+    <h3>Bike Gearbox Design</h3>
+    <p>Designed and tested a gearbox for an EAPC, achieving top 10% in final test performance.</p>
+    <button class="toggle-btn">Tell me more ▼</button>
+    <div class="extra-details">
       <p>
-        I am a third-year Mechanical Engineering student at the University of Sheffield with a passion for motorsport, vehicle performance, and innovative engineering solutions. 
-        I enjoy applying design, simulation, and data analysis to real-world challenges and am actively seeking an industrial placement in Formula 1 or performance engineering.
+        This project involved calculating the required gear ratio, CAD design, FEA validation, and iterative prototyping. 
+        A last-minute failure due to adhesive joints taught me resilience and accountability, leading to a successful redesign using bolted joints. 
+        The final design scored highly in efficiency and performance testing.
       </p>
-    </section>
+    </div>
+  </article>
 
-    <section id="projects">
-      <h2>Projects</h2>
+  <article class="project" data-aos="fade-up">
+    <h3>Water Bottle Rocket Launcher</h3>
+    <p>Built and modelled a compressed-air rocket system, combining MATLAB simulations with experimental testing.</p>
+    <button class="toggle-btn">Tell me more ▼</button>
+    <div class="extra-details">
+      <p>
+        Integrated MATLAB modelling with iterative launch tests to refine parameters and achieve a 70 m target within 10 m accuracy. 
+        Gained hands-on experience in CAD, prototyping, and data-driven validation while improving the launcher’s safety and stability.
+      </p>
+    </div>
+  </article>
 
-      <div class="project">
-        <h3>Gearbox Design for EAPC</h3>
-        <p>
-          Designed a gearbox to efficiently transmit power from an electric motor to the rear wheel. 
-          Applied modelling, analysis, and iterative testing, achieving top 10% performance in testing.
-        </p>
-      </div>
+  <article class="project" data-aos="fade-up">
+    <h3>Engineering You’re Hired</h3>
+    <p>Worked in a multidisciplinary team to design infection-preventing smart implants for hip and knee replacements.</p>
+    <button class="toggle-btn">Tell me more ▼</button>
+    <div class="extra-details">
+      <p>
+        My role included researching antimicrobial coatings and developing an inclusivity policy for patient accessibility. 
+        We designed a biosensor-enabled implant that could reduce revision surgeries by 30–50%, balancing innovation with sustainability and affordability. 
+        Presented findings through pitches and technical documentation to industry experts.
+      </p>
+    </div>
+  </article>
 
-      <div class="project">
-        <h3>Water Bottle Rocket Launcher</h3>
-        <p>
-          Built and tested a compressed-air rocket launcher with iterative simulation and experimental validation. 
-          Achieved consistent launches within a 10m target zone.
-        </p>
-      </div>
+</section>
 
-      <div class="project">
-        <h3>Engineering Your Hired – Healthcare Innovation</h3>
-        <p>
-          Collaborated in a multidisciplinary team to develop antimicrobial implant coatings and inclusivity policy proposals. 
-          Explored the intersection of engineering and medicine for long-term patient benefits.
-        </p>
-      </div>
+<section id="skills" data-aos="fade-up">
+  <h2>Skills</h2>
+  <ul>
+    <li><strong>CAD & Simulation:</strong> Fusion 360, ANSYS, FEA, CFD</li>
+    <li><strong>Programming:</strong> MATLAB, Python (FastF1), C++</li>
+    <li><strong>Prototyping & Manufacturing:</strong> 3D printing, CNC machining, lathe, hand & power tools</li>
+    <li><strong>Collaboration:</strong> Multidisciplinary teamwork, clear communication, inclusivity in design</li>
+  </ul>
+</section>
 
-      <div class="project">
-        <h3>Exploring F1 Telemetry</h3>
-        <p>
-          Analysed Formula 1 telemetry data using Python (FastF1) and Jupyter Notebook. 
-          Gained insights into braking, throttle, and steering traces to understand driver-car performance dynamics.
-        </p>
-      </div>
-    </section>
+<section id="cv" data-aos="fade-up">
+  <h2>CV</h2>
+  <p><a href="CV.pdf" download>Download my CV</a></p>
+</section>
 
-    <section id="skills">
-      <h2>Skills</h2>
-      <div class="skills-grid">
-        <div class="skill">CAD: Fusion 360, AutoCAD</div>
-        <div class="skill">Simulation: FEA, CFD</div>
-        <div class="skill">Programming: Python, MATLAB, C++</div>
-        <div class="skill">Manufacturing: 3D Printing, Lathe, Laser Cutting</div>
-        <div class="skill">Diagnostics: Mechanical fault detection</div>
-        <div class="skill">Collaboration: Multidisciplinary teamwork</div>
-      </div>
-    </section>
+<footer>
+  <p>Connect with me on <a href="https://www.linkedin.com/in/">LinkedIn</a> | <a href="https://github.com/">GitHub</a></p>
+  <p>&copy; 2025 Ayomide Akinbobola</p>
+</footer>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:ayomideakinbobola@gmail.com">ayomideakinbobola@gmail.com</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/ayomidea" target="_blank">linkedin.com/in/ayomidea</a></p>
-      <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
-    </section>
-  </main>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
 
-  <footer>
-    <p>&copy; 2025 Ayomide Akinbobola | Built with ❤️ for GitHub Pages</p>
-  </footer>
+  document.querySelectorAll('.toggle-btn').forEach(button => {
+    button.addEventListener('click', () => {
+      const details = button.nextElementSibling;
+      details.classList.toggle('open');
+      button.textContent = details.classList.contains('open') 
+        ? 'Show less ▲' 
+        : 'Tell me more ▼';
+    });
+  });
+</script>
+
 </body>
 </html>
