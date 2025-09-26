@@ -43,9 +43,14 @@
       color: #1f2937;
     }
     .project img {
-      width: 100%;
-      border-radius: 10px;
-      margin: 1rem 0;
+  width: 100%;          /* makes image scale to fit card width */
+  max-width: 500px;     /* prevents them from getting too big */
+  height: auto;         /* keeps aspect ratio */
+  border-radius: 8px;   /* gives rounded corners */
+  margin: 1rem 0;       /* adds spacing around the image */
+  display: block;       /* removes weird inline spacing */
+     }
+
     }
     .toggle-btn {
       background: none;
