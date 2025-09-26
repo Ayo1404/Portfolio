@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ayomide Akinbobola | Mechanical Engineer</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f8f9fa;
+      color: #222;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(to bottom, #111827, #1f2937);
+      color: white;
+      text-align: center;
+      padding: 5rem 2rem;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 1.25rem;
+    }
+    section {
+      max-width: 900px;
+      margin: auto;
+      padding: 3rem 1rem;
+    }
+    .project {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
+    }
+    .project h3 {
+      margin-top: 0;
+      color: #1f2937;
+    }
+    .toggle-btn {
+      background: none;
+      border: none;
+      color: #2563eb;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 0.5rem;
+      padding: 0;
+    }
+    .toggle-btn:hover {
+      text-decoration: underline;
+    }
+    .extra-details {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease-out, opacity 0.3s ease-out;
+      opacity: 0;
+    }
+    .extra-details.open {
+      max-height: 2000px; /* allow for longer content */
+      opacity: 1;
+      margin-top: 1rem;
+    }
+    footer {
+      background: #111827;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    footer a {
+      color: #60a5fa;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+<header data-aos="fade-up">
+  <h1>Ayomide Akinbobola</h1>
+  <p>Mechanical Engineering Student | Motorsport & Performance Engineering Enthusiast</p>
+</header>
+
+<section id="about" data-aos="fade-up">
+  <h2>About Me</h2>
+  <p>
+    I am a third-year Mechanical Engineering student at the University of Sheffield, passionate about motorsport, vehicle performance, and applied engineering. 
+    My projects span gearbox and drivetrain design, aerodynamic validation, and prototyping launch systems, all of which have strengthened my CAD, simulation, and problem-solving skills. 
+    I’m seeking a 2026/27 placement where I can apply these experiences, contribute to real performance challenges, and continue learning in a fast-paced engineering environment.
+  </p>
+</section>
+
+<section id="projects">
+  <h2 data-aos="fade-up">Projects</h2>
+
+  <article class="project" data-aos="fade-up">
+    <h3>Bike Gearbox Design</h3>
+    <p>Designed and tested a gearbox for an EAPC, achieving top 10% in final test performance.</p>
+    <button class="toggle-btn">Tell me more ▼</button>
+    <div class="extra-details">
+      <p>
+        This second-year group project focused on transmitting power from an electric motor to the rear wheel while meeting UK regulations. 
+        We compared belt drives, planetary sets, and two-stage spur gear concepts, selecting the latter for its balance of efficiency and manufacturability.
+      </p>
+      <p>
+        I led gear module selection, CAD modelling, and FEA validation to check load transfer and durability. 
+        Our first prototype, manufactured in laser-cut acrylic, failed when a gear sheared from the shaft due to adhesive joints. 
+        This was a turning point — we redesigned the assembly with bolted and clamped connections, improving reliability.
+      </p>
+      <p>
+        In final testing, our design ranked in the top 10% for material efficiency and assembly time, and achieved competitive performance in distance trials. 
+        This project sharpened my skills in CAD, simulation, prototyping, and rapid design iteration under tight deadlines.
+      </p>
+    </div>
+  </article>
+
+  <article class="project" data-aos="fade-up">
+    <h3>Water Bottle Rocket Launcher</h3>
+    <p>Built and modelled a compressed-air rocket system, combining MATLAB simulations with experimental testing.</p>
+    <button class="toggle-btn">Tell me more ▼</button>
+    <div class="extra-details">
+      <p>
+        Working in a first-year team, we designed a compressed-air water rocket launcher with a safe, adjustable release mechanism. 
+        I contributed to CAD modelling of the launcher frame and developed MATLAB code to predict trajectory based on input pressure, water volume, and drag.
+      </p>
+      <p>
+        We initially faced stability issues — rockets veered unpredictably due to centre-of-pressure misalignment. 
+        To solve this, we added fins, a nose cone, and a slanted launch rail for angle control. 
+        This iterative approach improved both safety and accuracy.
+      </p>
+      <p>
+        On test day, our simulation predicted the required pressure for a 70 m target, and all three launches landed within 10 m of the goal. 
+        The project gave me valuable experience in integrating modelling with experimental data, and taught me the importance of validation when bridging theory and practice.
+      </p>
+    </div>
+  </article>
+
+  <article class="project" data-aos="fade-up">
+    <h3>Engineering You’re Hired</h3>
+    <p>Worked in a multidisciplinary team to design infection-preventing smart implants for hip and knee replacements.</p>
+    <button class="toggle-btn">Tell me more ▼</button>
+    <div class="extra-details">
+      <p>
+        In this week-long challenge, I collaborated with engineers from different disciplines to design smart implants capable of reducing infection rates in hip and knee replacements. 
+        We researched antimicrobial coatings, biosensors, and additive manufacturing techniques to enhance long-term patient outcomes.
+      </p>
+      <p>
+        My role was to investigate antimicrobial strategies and draft an inclusivity framework to ensure patient accessibility. 
+        I also contributed to concept evaluation and the development of decision matrices to assess feasibility, cost, and sustainability.
+      </p>
+      <p>
+        Our final design featured a biosensor-enabled implant with an antimicrobial coating, projected to reduce revision surgeries by up to 50%. 
+        We presented our findings through both a technical report and a pitch to industry experts, strengthening my skills in technical communication and interdisciplinary teamwork.
+      </p>
+    </div>
+  </article>
+
+</section>
+
+<section id="skills" data-aos="fade-up">
+  <h2>Skills</h2>
+  <ul>
+    <li><strong>CAD & Simulation:</strong> Fusion 360, ANSYS, FEA, CFD</li>
+    <li><strong>Programming:</strong> MATLAB, Python (FastF1), C++</li>
+    <li><strong>Prototyping & Manufacturing:</strong> 3D printing, CNC machining, lathe, hand & power tools</li>
+    <li><strong>Collaboration:</strong> Multidisciplinary teamwork, clear communication, inclusivity in design</li>
+  </ul>
+</section>
+
+<section id="cv" data-aos="fade-up">
+  <h2>CV</h2>
+  <p><a href="CV.pdf" download>Download my CV</a></p>
+</section>
+
+<footer>
+  <p>Connect with me on <a href="https://www.linkedin.com/in/">LinkedIn</a> | <a href="https://github.com/">GitHub</a></p>
+  <p>&copy; 2025 Ayomide Akinbobola</p>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+
+  document.querySelectorAll('.toggle-btn').forEach(button => {
+    button.addEventListener('click', () => {
+      const details = button.nextElementSibling;
+      details.classList.toggle('open');
+      button.textContent = details.classList.contains('open') 
+        ? 'Show less ▲' 
+        : 'Tell me more ▼';
+    });
+  });
+</script>
+
+</body>
+</html>
