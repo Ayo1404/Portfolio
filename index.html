@@ -1,97 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ayomide Akinbobola | Mechanical Engineer</title>
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f8f9fa;
-      color: #222;
-      line-height: 1.6;
-    }
-    header {
-      background: linear-gradient(to bottom, #111827, #1f2937);
-      color: white;
-      text-align: center;
-      padding: 5rem 2rem;
-    }
-    header h1 {
-      font-size: 3rem;
-      margin-bottom: 0.5rem;
-    }
-    header p {
-      font-size: 1.25rem;
-    }
-    section {
-      max-width: 900px;
-      margin: auto;
-      padding: 3rem 1rem;
-    }
-    .project {
-      background: white;
-      padding: 1.5rem;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      margin-bottom: 2rem;
-    }
-    .project h3 {
-      margin-top: 0;
-      color: #1f2937;
-    }
-    .toggle-btn {
-      background: none;
-      border: none;
-      color: #2563eb;
-      font-weight: bold;
-      cursor: pointer;
-      margin-top: 0.5rem;
-      padding: 0;
-    }
-    .toggle-btn:hover {
-      text-decoration: underline;
-    }
-    .extra-details {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.4s ease-out, opacity 0.3s ease-out;
-      opacity: 0;
-    }
-    .extra-details.open {
-      max-height: 1000px;
-      opacity: 1;
-      margin-top: 1rem;
-    }
-    footer {
-      background: #111827;
-      color: white;
-      text-align: center;
-      padding: 2rem 1rem;
-    }
-    footer a {
-      color: #60a5fa;
-      text-decoration: none;
-    }
-  </style>
-</head>
-<body>
-
-<header data-aos="fade-up">
-  <h1>Ayomide Akinbobola</h1>
-  <p>Mechanical Engineering Student | Motorsport & Performance Engineering Enthusiast</p>
-</header>
-
-<section id="about" data-aos="fade-up">
-  <h2>About Me</h2>
-  <p>
-    I am a third-year Mechanical Engineering student at the University of Sheffield, passionate about motorsport, vehicle performance, and applied engineering. 
-    I’m seeking a 2026/27 placement where I can apply my technical and analytical skills, contribute to performance challenges, and grow in a fast-paced environment.
-  </p>
-</section>
-
 <section id="projects">
   <h2 data-aos="fade-up">Projects</h2>
 
@@ -101,9 +7,17 @@
     <button class="toggle-btn">Tell me more ▼</button>
     <div class="extra-details">
       <p>
-        This project involved calculating the required gear ratio, CAD design, FEA validation, and iterative prototyping. 
-        A last-minute failure due to adhesive joints taught me resilience and accountability, leading to a successful redesign using bolted joints. 
-        The final design scored highly in efficiency and performance testing.
+        This second-year group project focused on transmitting power from an electric motor to the rear wheel while meeting UK regulations. 
+        We compared belt drives, planetary sets, and two-stage spur gear concepts, selecting the latter for its balance of efficiency and manufacturability.
+      </p>
+      <p>
+        I led gear module selection, CAD modelling, and FEA validation to check load transfer and durability. 
+        Our first prototype, manufactured in laser-cut acrylic, failed when a gear sheared from the shaft due to adhesive joints. 
+        This was a turning point — we redesigned the assembly with bolted and clamped connections, improving reliability.
+      </p>
+      <p>
+        In final testing, our design ranked in the top 10% for material efficiency and assembly time, and achieved competitive performance in distance trials. 
+        This project sharpened my skills in CAD, simulation, prototyping, and rapid design iteration under tight deadlines.
       </p>
     </div>
   </article>
@@ -114,8 +28,37 @@
     <button class="toggle-btn">Tell me more ▼</button>
     <div class="extra-details">
       <p>
-        Integrated MATLAB modelling with iterative launch tests to refine parameters and achieve a 70 m target within 10 m accuracy. 
-        Gained hands-on experience in CAD, prototyping, and data-driven validation while improving the launcher’s safety and stability.
+        Working in a first-year team, we designed a compressed-air water rocket launcher with a safe, adjustable release mechanism. 
+        I contributed to CAD modelling of the launcher frame and developed MATLAB code to predict trajectory based on input pressure, water volume, and drag.
+      </p>
+      <p>
+        We initially faced stability issues — rockets veered unpredictably due to centre-of-pressure misalignment. 
+        To solve this, we added fins, a nose cone, and a slanted launch rail for angle control. 
+        This iterative approach improved both safety and accuracy.
+      </p>
+      <p>
+        On test day, our simulation predicted the required pressure for a 70 m target, and all three launches landed within 10 m of the goal. 
+        The project gave me valuable experience in integrating modelling with experimental data, and taught me the importance of validation when bridging theory and practice.
+      </p>
+    </div>
+  </article>
+
+  <article class="project" data-aos="fade-up">
+    <h3>Reaching Aid Project</h3>
+    <p>Designed and prototyped an assistive reaching device to improve accessibility and ergonomics.</p>
+    <button class="toggle-btn">Tell me more ▼</button>
+    <div class="extra-details">
+      <p>
+        This project challenged us to design a reaching aid for individuals with limited mobility. 
+        I worked on developing lightweight, ergonomic mechanisms that balanced strength and usability while keeping manufacturing cost-effective.
+      </p>
+      <p>
+        Through CAD modelling, rapid prototyping, and physical testing, we evaluated grip strength, stability, and user comfort. 
+        My focus was on designing a reliable gripping mechanism using a linkage system that could be manufactured using 3D printing and simple components.
+      </p>
+      <p>
+        The final design was able to lift small household objects securely and comfortably. 
+        This project highlighted the importance of inclusive design and gave me first-hand experience in user-centred engineering.
       </p>
     </div>
   </article>
@@ -126,49 +69,37 @@
     <button class="toggle-btn">Tell me more ▼</button>
     <div class="extra-details">
       <p>
-        My role included researching antimicrobial coatings and developing an inclusivity policy for patient accessibility. 
-        We designed a biosensor-enabled implant that could reduce revision surgeries by 30–50%, balancing innovation with sustainability and affordability. 
-        Presented findings through pitches and technical documentation to industry experts.
+        In this week-long challenge, I collaborated with engineers from different disciplines to design smart implants capable of reducing infection rates in hip and knee replacements. 
+        We researched antimicrobial coatings, biosensors, and additive manufacturing techniques to enhance long-term patient outcomes.
+      </p>
+      <p>
+        My role was to investigate antimicrobial strategies and draft an inclusivity framework to ensure patient accessibility. 
+        I also contributed to concept evaluation and the development of decision matrices to assess feasibility, cost, and sustainability.
+      </p>
+      <p>
+        Our final design featured a biosensor-enabled implant with an antimicrobial coating, projected to reduce revision surgeries by up to 50%. 
+        We presented our findings through both a technical report and a pitch to industry experts, strengthening my skills in technical communication and interdisciplinary teamwork.
+      </p>
+    </div>
+  </article>
+
+  <article class="project" data-aos="fade-up">
+    <h3>Global Engineering Challenge Week</h3>
+    <p>Collaborated with an international team to create sustainable engineering solutions for real-world problems.</p>
+    <button class="toggle-btn">Tell me more ▼</button>
+    <div class="extra-details">
+      <p>
+        During this intensive week, I worked with students from across engineering disciplines to address global sustainability challenges. 
+        Our team focused on improving water access and energy efficiency in developing regions using low-cost, locally sourced materials.
+      </p>
+      <p>
+        I contributed to the system modelling and helped create prototype concepts that integrated renewable energy and efficient resource use. 
+        We also produced an impact assessment to evaluate feasibility and community benefits.
+      </p>
+      <p>
+        This experience deepened my awareness of the social responsibility of engineers, strengthened my teamwork and leadership in multicultural groups, and reinforced the importance of sustainable, practical solutions.
       </p>
     </div>
   </article>
 
 </section>
-
-<section id="skills" data-aos="fade-up">
-  <h2>Skills</h2>
-  <ul>
-    <li><strong>CAD & Simulation:</strong> Fusion 360, ANSYS, FEA, CFD</li>
-    <li><strong>Programming:</strong> MATLAB, Python (FastF1), C++</li>
-    <li><strong>Prototyping & Manufacturing:</strong> 3D printing, CNC machining, lathe, hand & power tools</li>
-    <li><strong>Collaboration:</strong> Multidisciplinary teamwork, clear communication, inclusivity in design</li>
-  </ul>
-</section>
-
-<section id="cv" data-aos="fade-up">
-  <h2>CV</h2>
-  <p><a href="CV.pdf" download>Download my CV</a></p>
-</section>
-
-<footer>
-  <p>Connect with me on <a href="https://www.linkedin.com/in/">LinkedIn</a> | <a href="https://github.com/">GitHub</a></p>
-  <p>&copy; 2025 Ayomide Akinbobola</p>
-</footer>
-
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init();
-
-  document.querySelectorAll('.toggle-btn').forEach(button => {
-    button.addEventListener('click', () => {
-      const details = button.nextElementSibling;
-      details.classList.toggle('open');
-      button.textContent = details.classList.contains('open') 
-        ? 'Show less ▲' 
-        : 'Tell me more ▼';
-    });
-  });
-</script>
-
-</body>
-</html>
